@@ -17,7 +17,7 @@ namespace GeneralLibrary
             var rsa1 = new RSACryptoServiceProvider(); // Noncompliant - default key size is 1024
             rsa1.KeySize = 2048; // Noncompliant - the setter does not update the underlying key size for the RSACryptoServiceProvider class
 
-            var rsa2 = new RSACng(1024); // Noncompliant
+            var rsa2 = new RSACng(512); // Noncompliant
 
             // ...
         }
