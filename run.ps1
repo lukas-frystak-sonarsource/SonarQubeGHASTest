@@ -128,4 +128,4 @@ dotnet build $SOLUTION --configuration Release
 
 
 # Run .NET analysis
-dotnet sonarscanner end /d:sonar.login=$SONARQUBE_TOKEN 3>&1 2>&1 > dotnet-analysis.log
+dotnet sonarscanner end /d:sonar.login=$SONARQUBE_TOKEN #3>&1 2>&1 > dotnet-analysis.log
